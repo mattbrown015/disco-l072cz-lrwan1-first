@@ -1,4 +1,3 @@
-mbed-os/events/*
 mbed-os/rtos/*
 mbed-os/features/cellular/*
 mbed-os/features/FEATURE_BLE/*
@@ -30,15 +29,10 @@ mbed-os/drivers/SerialBase.cpp
 mbed-os/drivers/SPI.cpp
 mbed-os/drivers/SPISlave.cpp
 mbed-os/drivers/TableCRC.cpp
-mbed-os/drivers/Ticker.cpp
-mbed-os/drivers/Timeout.cpp
-mbed-os/drivers/Timer.cpp
-mbed-os/drivers/TimerEvent.cpp
 mbed-os/drivers/UARTSerial.cpp
 mbed-os/hal/mbed_flash_api.c
 mbed-os/hal/mbed_itm_api.c
 mbed-os/hal/mbed_lp_ticker_api.c
-mbed-os/hal/mbed_sleep_manager.c
 mbed-os/platform/ATCmdParser.cpp
 mbed-os/platform/Callback.cpp
 mbed-os/platform/Callchain.cpp
@@ -65,8 +59,6 @@ mbed-os/targets/TARGET_STM/i2c_api.c
 mbed-os/targets/TARGET_STM/lp_ticker.c
 mbed-os/targets/TARGET_STM/port_api.c
 mbed-os/targets/TARGET_STM/pwmout_api.c
-mbed-os/targets/TARGET_STM/rtc_api.c
-mbed-os/targets/TARGET_STM/sleep.c
 mbed-os/targets/TARGET_STM/stm_spi_api.c
 mbed-os/targets/TARGET_STM/trng_api.c
 mbed-os/targets/TARGET_STM/us_ticker_32b.c
@@ -105,7 +97,6 @@ mbed-os/targets/TARGET_STM/TARGET_STM32L0/device/stm32l0xx_hal_pcd_ex.c
 mbed-os/targets/TARGET_STM/TARGET_STM32L0/device/stm32l0xx_hal_pwd.c
 mbed-os/targets/TARGET_STM/TARGET_STM32L0/device/stm32l0xx_hal_pwd_ex.c
 mbed-os/targets/TARGET_STM/TARGET_STM32L0/device/stm32l0xx_hal_rng.c
-mbed-os/targets/TARGET_STM/TARGET_STM32L0/device/stm32l0xx_hal_rtc.c
 mbed-os/targets/TARGET_STM/TARGET_STM32L0/device/stm32l0xx_hal_rtc_ex.c
 mbed-os/targets/TARGET_STM/TARGET_STM32L0/device/stm32l0xx_hal_smartcard.c
 mbed-os/targets/TARGET_STM/TARGET_STM32L0/device/stm32l0xx_hal_smartcard_ex.c

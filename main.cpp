@@ -5,6 +5,8 @@ namespace
 
 DigitalOut green_led(LED1);
 
+EventQueue event_queue;
+
 void demonstrateStillRunning() {
     green_led = !green_led;
     puts("running");
@@ -15,9 +17,8 @@ void demonstrateStillRunning() {
 int main() {
     puts("disco-l072cz-lrwan1-first");
 
-    while (1) {
-        wait(2);
+    event_queue.call_every(2000, demonstrateStillRunning);
 
-        demonstrateStillRunning();
-    }
+    puts("dispatch_forever");
+    event_queue.dispatch_forever();
 }
