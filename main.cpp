@@ -5,6 +5,11 @@ namespace
 
 DigitalOut green_led(LED1);
 
+void demonstrateStillRunning() {
+    green_led = !green_led;
+    puts("running");
+}
+
 }
 
 int main() {
@@ -13,7 +18,6 @@ int main() {
     while (1) {
         wait(2);
 
-        green_led = !green_led;
-        puts("running");
+        demonstrateStillRunning();
     }
 }
