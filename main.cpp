@@ -5,7 +5,8 @@ namespace
 
 DigitalOut green_led(LED1);
 
-EventQueue event_queue;
+unsigned char event_queue_buffer[EVENTS_QUEUE_SIZE];
+EventQueue event_queue(EVENTS_QUEUE_SIZE, event_queue_buffer);
 
 void demonstrateStillRunning() {
     green_led = !green_led;
