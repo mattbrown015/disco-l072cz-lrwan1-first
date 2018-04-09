@@ -1,6 +1,11 @@
 #include <mbed.h>
 
+namespace
+{
+
 DigitalOut green_led(LED1);
+
+}
 
 int main() {
     puts("disco-l072cz-lrwan1-first");
